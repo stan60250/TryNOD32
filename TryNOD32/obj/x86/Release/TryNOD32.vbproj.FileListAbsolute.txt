@@ -1,0 +1,29 @@
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\bin\Release\TryNOD32.exe
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\bin\Release\TryNOD32.pdb
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\bin\Release\TryNOD32.xml
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\ResolveAssemblyReference.cache
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\WindowsApplication1.MainForm.resources
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\WindowsApplication1.Resources.resources
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.exe
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.xml
+E:\專案\VisualStudio專案\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.pdb
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.exe
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.xml
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.pdb
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.exe
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.pdb
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.xml
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.vbproj.GenerateResource.Cache
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.MainForm.resources
+E:\專案\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.Resources.resources
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.exe
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.xml
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.pdb
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.exe
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.pdb
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.xml
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.MainForm.resources
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.Resources.resources
+E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.vbproj.GenerateResource.Cache
