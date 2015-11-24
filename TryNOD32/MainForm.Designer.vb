@@ -22,6 +22,7 @@ Partial Class MainForm
     '請不要使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PBar = New System.Windows.Forms.ProgressBar()
@@ -31,11 +32,22 @@ Partial Class MainForm
         Me.Button_GetData = New System.Windows.Forms.Button()
         Me.DataDateChoose = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button_CopyKey = New System.Windows.Forms.Button()
         Me.Button_CopyPW = New System.Windows.Forms.Button()
         Me.Button_CopyID = New System.Windows.Forms.Button()
+        Me.Label_msgOutput = New System.Windows.Forms.Label()
+        Me.Timer_UI = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -88,7 +100,7 @@ Partial Class MainForm
         Me.GroupBox2.Size = New System.Drawing.Size(208, 56)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "取得指定日期"
+        Me.GroupBox2.Text = "資料來源日期"
         '
         'Button_GetData
         '
@@ -96,7 +108,7 @@ Partial Class MainForm
         Me.Button_GetData.Name = "Button_GetData"
         Me.Button_GetData.Size = New System.Drawing.Size(51, 21)
         Me.Button_GetData.TabIndex = 5
-        Me.Button_GetData.Text = "取得"
+        Me.Button_GetData.Text = "抓取"
         Me.Button_GetData.UseVisualStyleBackColor = True
         '
         'DataDateChoose
@@ -108,14 +120,25 @@ Partial Class MainForm
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Button_CopyKey)
         Me.GroupBox3.Controls.Add(Me.Button_CopyPW)
         Me.GroupBox3.Controls.Add(Me.Button_CopyID)
         Me.GroupBox3.Location = New System.Drawing.Point(390, 74)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(208, 78)
+        Me.GroupBox3.Size = New System.Drawing.Size(208, 106)
         Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "複製至剪貼簿 (選取左方資料)"
+        Me.GroupBox3.Text = "複製至剪貼簿 (請先選取左方資料)"
+        '
+        'Button_CopyKey
+        '
+        Me.Button_CopyKey.Enabled = False
+        Me.Button_CopyKey.Location = New System.Drawing.Point(8, 77)
+        Me.Button_CopyKey.Name = "Button_CopyKey"
+        Me.Button_CopyKey.Size = New System.Drawing.Size(193, 22)
+        Me.Button_CopyKey.TabIndex = 2
+        Me.Button_CopyKey.Text = "複製序號"
+        Me.Button_CopyKey.UseVisualStyleBackColor = True
         '
         'Button_CopyPW
         '
@@ -137,11 +160,100 @@ Partial Class MainForm
         Me.Button_CopyID.Text = "複製帳號"
         Me.Button_CopyID.UseVisualStyleBackColor = True
         '
+        'Label_msgOutput
+        '
+        Me.Label_msgOutput.AutoSize = True
+        Me.Label_msgOutput.Location = New System.Drawing.Point(396, 190)
+        Me.Label_msgOutput.Name = "Label_msgOutput"
+        Me.Label_msgOutput.Size = New System.Drawing.Size(74, 12)
+        Me.Label_msgOutput.TabIndex = 8
+        Me.Label_msgOutput.Text = "正在初始化..."
+        '
+        'Timer_UI
+        '
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label3)
+        Me.GroupBox4.Controls.Add(Me.LinkLabel3)
+        Me.GroupBox4.Controls.Add(Me.Label2)
+        Me.GroupBox4.Controls.Add(Me.LinkLabel2)
+        Me.GroupBox4.Controls.Add(Me.Label1)
+        Me.GroupBox4.Controls.Add(Me.LinkLabel1)
+        Me.GroupBox4.Location = New System.Drawing.Point(390, 238)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(208, 138)
+        Me.GroupBox4.TabIndex = 9
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "資料來源"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(15, 100)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(83, 12)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "ESET 官方網站"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(20, 115)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(102, 12)
+        Me.LinkLabel3.TabIndex = 13
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Tag = "http://www.eset.com/"
+        Me.LinkLabel3.Text = "http://www.eset.com/"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(15, 60)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(131, 12)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "ESET 官方授權憑證轉換"
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(20, 75)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(132, 12)
+        Me.LinkLabel2.TabIndex = 11
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Tag = "https://my.eset.com/convert"
+        Me.LinkLabel2.Text = "https://my.eset.com/convert"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(15, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(175, 12)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "NOD32 免費防毒序號(天天更新) "
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(20, 35)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(128, 12)
+        Me.LinkLabel1.TabIndex = 8
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Tag = "http://www.trynod32.com/"
+        Me.LinkLabel1.Text = "http://www.trynod32.com/"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(603, 380)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.Label_msgOutput)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -149,12 +261,15 @@ Partial Class MainForm
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TryNOD32 帳號密碼取得工具(2013-07-11) - MapleHuang(stan60250@gmail.com)"
+        Me.Text = "TryNOD32 帳號密碼取得工具(2015-11-24) - MapleHuang(stan60250@gmail.com)"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -167,5 +282,15 @@ Partial Class MainForm
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Button_CopyPW As System.Windows.Forms.Button
     Friend WithEvents Button_CopyID As System.Windows.Forms.Button
+    Friend WithEvents Button_CopyKey As System.Windows.Forms.Button
+    Friend WithEvents Label_msgOutput As System.Windows.Forms.Label
+    Friend WithEvents Timer_UI As System.Windows.Forms.Timer
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
 
 End Class

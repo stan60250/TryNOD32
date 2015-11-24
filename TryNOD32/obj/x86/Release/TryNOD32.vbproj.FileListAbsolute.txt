@@ -27,3 +27,12 @@ E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\bin\Release\TryNOD32.xml
 E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.MainForm.resources
 E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.Resources.resources
 E:\Project\Visual Studio 2010\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.vbproj.GenerateResource.Cache
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.exe
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.xml
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.pdb
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\bin\Release\TryNOD32.exe
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\bin\Release\TryNOD32.pdb
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\bin\Release\TryNOD32.xml
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.MainForm.resources
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.Resources.resources
+E:\Project\Visual Studio 2013\TryNOD32\TryNOD32\obj\x86\Release\TryNOD32.vbproj.GenerateResource.Cache
